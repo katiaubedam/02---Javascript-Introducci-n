@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let distance = parseInt(prompt("Escribe la distancia en metros"))
+        let hours = parseInt(prompt("Escribe las horas"))
+        let minutes = parseInt(prompt("Escribe los minutos"))
+        let seconds = parseInt(prompt("Escribe los segundos"))
+
+        let totalSeconds = (hours * 3600) + (minutes * 60) + seconds
+        let totalHours = (minutes/60) + (seconds/3600) + hours
+        let metersPerSecond = distance / totalSeconds
+        let kilometersPerHour = (distance / 1000) / totalHours
+
+        alert(`La velocidad en metros por segundo es ${metersPerSecond} y en km/h es ${kilometersPerHour}`)
+
+    </script>
+</body>
+</html>

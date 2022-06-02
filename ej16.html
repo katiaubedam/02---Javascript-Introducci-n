@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Escribe un número de 3 dígitos"))
+
+        if (num > 99 && num < 1000) {
+            let centenas = parseInt(num / 100)
+            let decenas = parseInt((num % 100) / 10)
+            let unidades = num % 10
+
+            let suma = centenas + decenas + unidades
+
+            alert(`La suma de los 3 dígitos es ${suma}`)
+        }
+        else
+        {
+            alert("No es número de 3 dígitos :/")
+        }
+    </script>
+</body>
+</html>
